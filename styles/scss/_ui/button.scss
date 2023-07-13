@@ -1,0 +1,36 @@
+@import "./rainbow.scss";
+
+@mixin btn() {
+  @include rainbow();
+  display: block;
+  padding: 15px 25px;
+  margin: 15px 0;
+  border-radius: $borderRadius;
+  box-shadow: $shadow;
+  cursor: pointer;
+  text-shadow: $shadowText;
+  user-select: none;
+  font-size: 180%;
+  & > * {
+    vertical-align: middle;
+  }
+  svg {
+    filter: drop-shadow(0px 1px 1px $color3);
+  }
+}
+
+.btn {
+  @include btn();
+}
+.btn-outline{
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 75%;
+  color: $color4;
+  border: 1px solid $color4;
+  cursor: pointer;
+  &:hover{
+    color: lighten($color4, 20);
+    border-color: lighten($color4, 20);
+  }
+}

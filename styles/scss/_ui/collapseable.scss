@@ -1,0 +1,17 @@
+.collapseable {
+  overflow: hidden;
+  &.open .collapseable-content {
+    max-height: 2000px;
+  }
+  .collapseable-content {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .collapseable-name {
+    @include btn();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+}

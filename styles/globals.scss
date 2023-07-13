@@ -1,0 +1,83 @@
+@import "./scss/**/*.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: $color1 url("/images/bg.jpg");
+  color: $color4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input[type=button], input[type=submit]{
+  background: unset;
+  border: unset;
+  color: $color4;
+}
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: $color2 $color3;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $color3;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $color2;
+  border-radius: 3px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.title {
+  font-family: 'Eczar', serif;
+  line-height: 100%;
+  text-shadow: $shadow;
+  height: min-content;
+  margin-top: 0;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 600%;
+  @media screen and (max-width: 600px) {
+    font-size: 400%;
+  }
+}
+h2{
+  font-size: 400%;
+  @media screen and (max-width: 600px) {
+    font-size: 200%;
+  }
+}
+.heading{
+  text-align: center;
+}
+svg path{
+  fill: $color4;
+}
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

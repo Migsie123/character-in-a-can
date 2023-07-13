@@ -1,0 +1,104 @@
+.page-template {
+  display: flex;
+  flex-direction: column;
+  header {
+    flex: 0 0 auto;
+  }
+  main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-refresh {
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 25px;
+    svg {
+      height: 30px;
+      margin-left: 15px;
+    }
+  }
+  .template {
+    display: flex;
+    flex-direction: column;
+    .btn-copy {
+      align-self: center;
+      svg {
+        height: 30px;
+        margin-left: 15px;
+      }
+    }
+    .groups {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+
+      padding: 30px;
+
+      .group {
+        font-size: 125%;
+        background: $colorBg;
+        box-shadow: $shadow;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+          flex: 0 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: $colorBg;
+          padding: 10px 15px;
+          .name {
+            padding: 0 15px;
+            text-align: center;
+          }
+          .btn-solo-refresh {
+            flex: 0 0 35px;
+            height: 35px;
+            cursor: pointer;
+            padding: 0;
+            svg {
+              vertical-align: middle;
+              height: 100%;
+              width: 100%;
+              filter: drop-shadow(0 1px 1px $color3);
+            }
+            &:hover {
+              svg path {
+                stroke: $color2;
+                stroke-width: 2px;
+              }
+            }
+          }
+        }
+
+        .values {
+          flex: 1;
+          padding: 25px;
+          width: 100%;
+          overflow: auto;
+          .value {
+            margin-top: 15px;
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+
+        .random-count {
+          width: 50px;
+          padding: 0;
+          input {
+            width: inherit;
+          }
+        }
+      }
+    }
+  }
+}

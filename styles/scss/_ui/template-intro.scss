@@ -1,0 +1,27 @@
+.template-intro {
+  padding: 35px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: $borderRadius;
+  background: $colorBg;
+  line-height: 169%;
+  font-size: 125%;
+  box-shadow: $shadow;
+  margin-bottom: 30px;
+  text-shadow: $shadowText;
+  .intro-kofi-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    .btn-kofi-home {
+      height: 40px;
+      display: block;
+      width: max-content;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

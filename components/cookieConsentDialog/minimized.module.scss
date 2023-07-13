@@ -1,0 +1,22 @@
+.button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: min-content;
+  height: min-content;
+  background: rgba(255, 255, 255, 0.45);
+  color: #333;
+  white-space: nowrap;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: #222;
+  }
+  &.show {
+    display: block;
+  }
+}

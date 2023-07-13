@@ -1,0 +1,32 @@
+.page-home {
+  .content{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    & > *{
+      flex: 1 1 500px;
+    }
+    .intro{
+      margin: 0;
+      max-width: 100%;
+    }
+    .templates {
+      .template {
+        @include btn();
+        margin-top: 0;
+        .name {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  .templates{
+    .collapseable-content{
+      padding-left: 50px;
+    }
+  }
+
+}

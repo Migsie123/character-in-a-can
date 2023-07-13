@@ -1,0 +1,24 @@
+{
+  "en": {
+    "title": "We respect your privacy",
+    "text": "We use cookies to personalise content and to analyse our traffic. We share information about your use of our site with our advertising and analytics partners.",
+    "readMore": "For more information please see",
+    "privacyPolicy": "privacy policy.",
+    "privacyPolicyUrl": "",
+    "byAccepting": "By accepting cookies, you authorise the use of all cookies.",
+    "accept": "Accept cookies",
+    "decline": "Decline cookies",
+    "settings": "Cookie Settings"
+  },
+  "fi": {
+    "title": "Kunnioitamme yksityisyyttäsi",
+    "text": "Käytämme evästeitä kohdennetun sisällön tarjoamiseen ja palvelun käytön seuraamiseen. Jaamme tietoa sivuston käytöstä  markkinoinnin ja analytiikan yhteistyökumppaneillemme.",
+    "readMore": "Lisää tietoa löydät",
+    "privacyPolicy": "tietosuojaselosteestamme.",
+    "privacyPolicyUrl": "",
+    "byAccepting": "",
+    "accept": "Hyväksy evästeet",
+    "decline": "Hylkää evästeet",
+    "settings": "Hallitse evästeitä"
+  }
+}

@@ -1,0 +1,13 @@
+header.header-page{
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 180%;
+  .logo{
+    font-size: 100%;
+    margin-right: 15px;
+  }
+  .btn-back{
+    white-space: nowrap;
+  }
+}

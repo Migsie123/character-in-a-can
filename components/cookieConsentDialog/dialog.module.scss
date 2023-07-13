@@ -1,0 +1,52 @@
+$mobileBreakpoint: 992px;
+
+.banner {
+  display: none;
+  z-index: 200;
+  &.show {
+    display: block;
+    @media screen and (min-width: $mobileBreakpoint) {
+      display: flex;
+    }
+  }
+  background: #fff;
+  color: #333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  padding: 20px;
+  gap: 50px;
+
+  .title {
+    font-size: 22px;
+  }
+  .content {
+    font-size: 16px;
+    flex: 1;
+  }
+  .buttons {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    .btn {
+      padding: 10px 20px;
+      white-space: nowrap;
+      border-radius: 30px;
+      cursor: pointer;
+      flex: 0;
+      width: min-content;
+      height: min-content;
+      border: 2px solid #333;
+      &:hover,
+      &.active {
+        border: 2px solid #666;
+        color: #666;
+      }
+    }
+  }
+}
